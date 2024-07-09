@@ -1,0 +1,71 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+margin:0;
+padding:0;
+list-style: none;
+box-sizing: border-box;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.myshoppinglist{
+background-color: rgb(60, 184, 184);
+width:350px;
+padding: 10px;
+border-radius:30px;
+}
+.list{
+height:60vh;
+overflow: hidden;
+overflow-y: scroll;
+}
+.list::-webkit-scrollbar{
+    display:none ;
+}
+.list li{
+display: flex;
+padding: 8px;
+background-color: aquamarine;
+margin: 10px;
+border: radius 12px;
+}
+.list li p{
+width:85%;
+}
+.del{
+border:none;
+background-color:transparent;
+font: size 15px;
+color:rgb(201, 32, 32);
+}
+.tkn{
+border:none;
+background-color: blue;
+font-size:17px;
+color: blueviolet;
+}
+.add{
+background-color: darkgrey;
+padding: 8px;
+border: radius 20px 30px;
+}
+.add input{
+height:40px;
+border-radius:30px;
+border:none;
+outline:none;
+width: 230px;
+}
+.addbutton{
+border:none;
+height:40px;
+width:80px;
+border-radius:25px;
+}
+.markpurchased{
+ text-decoration: line-through;
+}
