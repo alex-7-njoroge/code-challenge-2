@@ -14,7 +14,7 @@ let ul = document.querySelector('ul')
   return `  <li> 
     <p id="${index}">${goods}</p>
     <button class="del" onclick="deleteitem(${index})"><i class="bi bi-x-circle"></i></button>
-    <button class="tkn" onclick="markPurchased"> <i class="bi bi-check-circle"></i></button>
+    <button class="tkn" onclick="markPurchased(${index})"> <i class="bi bi-check-circle"></i></button>
     </li>`    
 })
 
@@ -25,8 +25,8 @@ addInput.splice(index,1)
 createDOM(addInput)
 }
 function markPurchased(index){
-let p = document.getElementById(index.toString())
-p.classList.add("markpurchased")
+let p = document.getElementsByTagName("p")
+p[index].classList.add("markpurchased")
 
 }
 
